@@ -18,7 +18,7 @@ Then add:
 <script defer src="js/jquery.pageScroll3d.min.js"></script>
 ```
 
-Please make sure that jquery library and mousewell plugin are required, otherwise the plugin won't work!
+Make sure that the jquery library and the mousewell plugin are added, otherwise the plugin will not work!
 
 You still need to call $(element).scroll3D(); to initialize plugin on the element.
 
@@ -46,6 +46,6 @@ You still need to call $(element).scroll3D(); to initialize plugin on the elemen
 </script>
 ```
 
-Information from the h1 automatically becomes the button name in the menu.
+Information from the h1 tag automatically becomes the button name in the menu.
 
 Copyright (c) 2017 Leon.
