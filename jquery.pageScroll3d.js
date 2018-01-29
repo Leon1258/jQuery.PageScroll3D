@@ -145,10 +145,8 @@
 		},
 		destroy: function() {
 			return this.each(function() {
-				var $this = $(this),
-					data = $this.data('scroll3D');
-
-				$(window).unbind('.scroll3D');
+				$('body').off('mousewheel');
+				$(document).off('click', '.s3d__navigation-link');
 			});
 		}
 	};
@@ -159,7 +157,7 @@
 		} else if (typeof method === 'object' || !method) {
 			return methods.init.apply(this, arguments);
 		} else {
-			$.error('Метод с именем ' + method + 'не существует для jQuery.scroll3D');
+			$.error('Метод с именем ' + method + ' не существует для jQuery.scroll3D');
 		}
 	};
 })(jQuery);
